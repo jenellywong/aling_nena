@@ -47,7 +47,7 @@
               <td>Name</td>
               <td>Price</td>
               <td>Quantity</td>
-
+              <td>Sold</td>
             </tr>
           </thead>
           <tbody>
@@ -57,6 +57,7 @@
               <td><%= product.name %></td>
               <td><%= product.price %></td>
               <td><%= product.quantity %></td>
+              <td><%= product.sold %></td>
 
 
             </tr>

@@ -38,34 +38,18 @@
 
       <div class="admin">
 
-	<img src="bannerr.jpg">
-	<h3>PRODUCTS</h3>
-	<table class="table table-striped">
-          <thead>
-            <tr>
-              <td>ID</td>
-              <td>Name</td>
-              <td>Price</td>
-              <td>Quantity</td>
+	<h3>Change for your payment of <%= @something.sum %> is <%= @something.mchange %>.</h3>
+	<h4> DENOMINATIONS: </h4>
+	<h5> 1000: <%= @givechange[:thousands] %> </h5>
+	<h5> 500: <%= @givechange[:five_hundreds] %>< /h5>
+	<h5> 100: <%= @givechange[:hundreds] %> </h5>
+	<h5> 50: <%= @givechange[:fifties] %> </h5>
+	<h5> 20: <%= @givechange[:twenties] %> </h5>
+	<h5> 10: <%= @givechange[:tens] %> </h5>
+	<h5> 5: <%= @givechange[:fives] %> </h5>
+	<h5> 1: <%= @givechange[:ones] %> </h5>
 
-            </tr>
-          </thead>
-          <tbody>
-	<% @ten.each do |product| %>
-            <tr>
-              <td><%= product.id %></td>
-              <td><%= product.name %></td>
-              <td><%= product.price %></td>
-              <td><%= product.quantity %></td>
-
-
-            </tr>
-			<% end %>          
-			</tbody>          
-        </table>
-
-	
-	<h5><a href="/products">View All</a></h5>
+	<h4>Thank 
       </div>
 
     </div><!-- /.container -->

@@ -40,16 +40,16 @@
 
 	<h3>Change for your payment of <%= @something.sum %> is <%= @something.mchange %>.</h3>
 	<h4> DENOMINATIONS: </h4>
-	<h5> 1000: <%=givechange[:thousands] %> </h5>
-	<h5> 500: <%=givechange[:five_hundreds] %>< /h5>
-	<h5> 100: <%=givechange[:hundreds] %> </h5>
-	<h5> 50: <%=givechange[:fifties] %> </h5>
-	<h5> 20: <%=givechange[:twenties] %> </h5>
-	<h5> 10: <%=givechange[:tens] %> </h5>
-	<h5> 5: <%=givechange[:fives] %> </h5>
-	<h5> 1: <%=givechange[:ones] %> </h5>
+	<h5> 1000: <%= @givechange[:thousands] %> </h5>
+	<h5> 500: <%= @givechange[:five_hundreds] %> </h5>
+	<h5> 100: <%= @givechange[:hundreds] %> </h5>
+	<h5> 50: <%= @givechange[:fifties] %> </h5>
+	<h5> 20: <%= @givechange[:twenties] %> </h5>
+	<h5> 10: <%= @givechange[:tens] %> </h5>
+	<h5> 5: <%= @givechange[:fives] %> </h5>
+	<h5> 1: <%= @givechange[:ones] %> </h5>
 
-	<h4>Thank you!</h4>
+	<h4>Thank you for shopping!</h4>
       </div>
 
     </div><!-- /.container -->
