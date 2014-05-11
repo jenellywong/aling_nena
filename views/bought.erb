@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>All Products : Aling Nena </title>
+    <title>Aling Nena's Sari-Sari Store</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -37,33 +37,19 @@
     <div class="container">
 
       <div class="admin">
-        <h1>EDIT:</h1>
 
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <td>ID</td>
-              <td>Name</td>
-              <td>Price</td>
-              <td>Quantity</td>
-              <td>Sold</td>
-            </tr>
-          </thead>
-          <tbody>
-          <% @products.each do |product| %>
-            <tr>
-              <td><%= product.id %></td>
-              <td><%= product.name %></td>
-              <td><%= product.price %></td>
-              <td><%= product.quantity %></td>
-              <td><%= product.sold %></td>
-              <td><a href="/edit_product/<%= product.id %>" class="btn btn-default btn-primary">Edit</a></td>
-              <td><a href="/delete_product/<%= product.id %>" class="btn btn-default btn-danger">Delete</a></td>
-            </tr>
-			<% end %>          
-			</tbody>          
-        </table>
-        <a href="/new_product" class="btn btn-default">Create New Product</a>
+	<h3>Change for your payment of <%= @something.sum %> is <%= @something.mchange %>.</h3>
+	<h4> DENOMINATIONS: </h4>
+	<h5> 1000: <%=givechange[:thousands] %> </h5>
+	<h5> 500: <%=givechange[:five_hundreds] %>< /h5>
+	<h5> 100: <%=givechange[:hundreds] %> </h5>
+	<h5> 50: <%=givechange[:fifties] %> </h5>
+	<h5> 20: <%=givechange[:twenties] %> </h5>
+	<h5> 10: <%=givechange[:tens] %> </h5>
+	<h5> 5: <%=givechange[:fives] %> </h5>
+	<h5> 1: <%=givechange[:ones] %> </h5>
+
+	<h4>Thank you!</h4>
       </div>
 
     </div><!-- /.container -->

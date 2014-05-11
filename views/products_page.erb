@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>All Products : Aling Nena </title>
+    <title>Products</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -37,36 +37,35 @@
     <div class="container">
 
       <div class="admin">
-        <h1>EDIT:</h1>
 
-        <table class="table table-striped">
+	<h2>Aling Nena's Products</h2>
+	        <table class="table table-striped">
           <thead>
             <tr>
               <td>ID</td>
               <td>Name</td>
               <td>Price</td>
               <td>Quantity</td>
-              <td>Sold</td>
             </tr>
           </thead>
           <tbody>
           <% @products.each do |product| %>
             <tr>
               <td><%= product.id %></td>
-              <td><%= product.name %></td>
+              <td><a href="/purchase/<%= product.id %>" class="btn btn-default btn-primary"><%= product.name %></a></td>
               <td><%= product.price %></td>
               <td><%= product.quantity %></td>
-              <td><%= product.sold %></td>
-              <td><a href="/edit_product/<%= product.id %>" class="btn btn-default btn-primary">Edit</a></td>
-              <td><a href="/delete_product/<%= product.id %>" class="btn btn-default btn-danger">Delete</a></td>
+
             </tr>
 			<% end %>          
 			</tbody>          
         </table>
-        <a href="/new_product" class="btn btn-default">Create New Product</a>
+
       </div>
 
-    </div><!-- /.container -->
+    </div>
+
+<!-- /.container -->
 
 
     <!-- Bootstrap core JavaScript
